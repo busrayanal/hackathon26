@@ -541,8 +541,13 @@ main, .footer { position: relative; z-index: 3; }
   animation: drip 2s ease-in-out infinite;
 }
 
+.k-short { display: none; }
+
 @media (max-width: 560px) {
-  .hero-title { font-size: 8.9vw; }
+  .hero-title { font-size: 8.9vw; margin-bottom: 20px; }
+  .k-long { display: none; }
+  .k-short { display: inline; }
+  .hero-sub { font-size: 1rem; margin-bottom: 22px; }
   .countdown { width: 100%; }
   .cd-box { min-width: 0; flex: 1; }
   .hero-cta { width: 100%; }
@@ -1415,10 +1420,23 @@ html:not(.gsap) .marquee-inner { animation: marquee 40s linear infinite; }
 @media (max-width: 860px) {
   .perks { grid-template-columns: 1fr; }
 }
+@media (max-width: 560px) {
+  .perks { gap: 12px; }
+  .perk { flex-direction: row; }
+  .perk-visual { flex: 0 0 104px; height: auto; min-height: 120px; border-bottom: 0; border-right: 1px solid var(--line); }
+  .perk-visual svg { width: 58px; height: 58px; }
+  .perk-body { padding: 18px 18px 20px; }
+  .perk h3 { font-size: 1.05rem; }
+  .perk p { font-size: 0.88rem; }
+  .perk .soon-tag { margin-top: 12px; }
+}
 @media (max-width: 760px) {
-  .prizes { grid-template-columns: 1fr; }
-  .podium-col.first { order: -1; }
+  .prizes { grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 40px; }
+  .podium-col.first { order: -1; grid-column: 1 / -1; }
   .podium-step { display: none; }
+  .prize:not(.first) { padding: 22px 12px 24px; }
+  .prize:not(.first) .medal-wrap { width: 64px; }
+  .prize:not(.first) .prize-amount { font-size: 1.35rem !important; }
 }
 
 /* ---------- Jury ---------- */
@@ -1973,6 +1991,15 @@ html:not(.gsap) .marquee-inner { animation: marquee 40s linear infinite; }
 .sponsor-cta .plus svg { width: 22px; height: 22px; }
 .sponsor-cta:hover .plus { transform: rotate(90deg); background: var(--silver); color: #04110b; }
 .sponsor-cta h3 { margin: 0; font-size: 1.2rem; }
+
+@media (max-width: 560px) {
+  .sponsor-grid { grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 40px; }
+  .sponsor { min-height: 130px; gap: 10px; padding: 20px 14px; }
+  .sponsor-word { font-size: 1.35rem !important; }
+  .sponsor-cta { grid-column: 1 / -1; min-height: 0; flex-direction: row; justify-content: center; gap: 14px; padding: 20px; }
+  .sponsor-cta .plus { margin: 0; }
+  .sponsor-cta .tier { display: none; }
+}
 
 /* ---------- Venues ---------- */
 
@@ -2530,8 +2557,12 @@ html:not(.gsap) .marquee-inner { animation: marquee 40s linear infinite; }
 
 @media (max-width: 900px) {
   .contact-head, .contact-cards { grid-template-columns: 1fr; }
-  .contact-card { min-height: 0; }
-  .cc-label { padding-top: 28px; }
+  .contact-cards { gap: 12px; }
+  .contact-card { min-height: 0; padding: 22px; }
+  .cc-icon { width: 48px; height: 48px; border-radius: 14px; }
+  .cc-icon svg { width: 22px; height: 22px; }
+  .cc-arrow { top: 22px; right: 22px; width: 22px; height: 22px; }
+  .cc-label { padding-top: 18px; }
 }
 @media (max-width: 560px) {
   .footer-bottom { flex-direction: column; align-items: flex-start; padding-right: 64px; }
