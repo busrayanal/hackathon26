@@ -546,26 +546,11 @@
     lenis.stop();
   }
 
-  const menuBtn = $("#menuToggle");
-
-  function closeMenu() {
-    document.body.classList.remove("menu-open");
-    menuBtn.setAttribute("aria-expanded", "false");
-    if (lenis) lenis.start();
-  }
-
   function initNav() {
     const nav = $("#nav");
     const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 40);
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
-
-    menuBtn.addEventListener("click", () => {
-      const open = !document.body.classList.contains("menu-open");
-      document.body.classList.toggle("menu-open", open);
-      menuBtn.setAttribute("aria-expanded", String(open));
-      if (lenis) open ? lenis.stop() : lenis.start();
-    });
 
     $("#langToggle").addEventListener("click", () => applyLang(lang === "tr" ? "en" : "tr"));
 
@@ -577,7 +562,6 @@
       const target = href === "#top" ? 0 : document.querySelector(href);
       if (target == null) return;
       e.preventDefault();
-      closeMenu();
       if (lenis) {
         lenis.scrollTo(target, { offset: target === 0 ? 0 : -60, duration: 1.6 });
       } else if (target === 0) {

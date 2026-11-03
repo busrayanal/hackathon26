@@ -246,66 +246,18 @@ main, .footer { position: relative; z-index: 3; }
 .lang-toggle:hover { border-color: var(--line-2); }
 .lang-opt.on { color: var(--accent); }
 
-.menu-toggle {
-  display: none;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: 1px solid var(--line-2);
-  background: rgba(4, 10, 7, 0.5);
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-}
-.menu-toggle span {
-  width: 16px;
-  height: 1.5px;
-  background: var(--text);
-  transition: transform 0.4s;
-}
-.menu-open .menu-toggle span:first-child { transform: translateY(3.75px) rotate(45deg); }
-.menu-open .menu-toggle span:last-child { transform: translateY(-3.75px) rotate(-45deg); }
-
 @media (max-width: 960px) {
-  .nav-links {
-    position: fixed;
-    inset: 0;
-    z-index: 1;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    background: rgba(4, 7, 5, 0.96);
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.4s;
-  }
-  .nav-links a {
-    font-family: var(--font-display);
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--text);
-  }
-  .menu-open .nav-links { opacity: 1; pointer-events: auto; }
-  .menu-toggle { display: flex; }
-  /* backdrop-filter tam ekran menüyü çubuğun içine hapsetmesin */
-  .menu-open .nav {
-    background: transparent;
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none;
-    border-bottom-color: transparent;
-  }
-  .nav-links { height: 100vh; height: 100dvh; }
-  .nav-links a.active { color: var(--accent); }
-  .nav-links a::after { display: none; }
+  .nav-links { display: none; }
 }
 @media (max-width: 480px) {
-  .nav .btn-sm { display: none; }
-  .brand-name { font-size: 0.85rem; }
+  .nav { gap: 10px; }
+  .nav-actions { gap: 8px; }
+  .brand { gap: 8px; }
+  .brand-name { font-size: 0.8rem; }
+  .lang-toggle { padding: 7px 10px; }
+}
+@media (max-width: 360px) {
+  .brand-name { display: none; }
 }
 
 /* ---------- Buttons ---------- */
