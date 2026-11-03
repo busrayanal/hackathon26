@@ -292,6 +292,16 @@ main, .footer { position: relative; z-index: 3; }
   }
   .menu-open .nav-links { opacity: 1; pointer-events: auto; }
   .menu-toggle { display: flex; }
+  /* backdrop-filter tam ekran menüyü çubuğun içine hapsetmesin */
+  .menu-open .nav {
+    background: transparent;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    border-bottom-color: transparent;
+  }
+  .nav-links { height: 100vh; height: 100dvh; }
+  .nav-links a.active { color: var(--accent); }
+  .nav-links a::after { display: none; }
 }
 @media (max-width: 480px) {
   .nav .btn-sm { display: none; }
