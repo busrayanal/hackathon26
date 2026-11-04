@@ -17,7 +17,7 @@ window.HACKATECH = {
 
   // Son başvuru anı. Ana sayfadaki sayaç bu ana kadar sayar, sonra etkinliğe kalan süreye geçer.
   // Boş kalırsa "yaklaşık bir hafta önce" yazar ve sayaç doğrudan etkinliğe sayar.
-  applyDeadline: "2026-11-30T23:59:00+03:00",
+  applyDeadline: "2026-12-07T23:59:00+03:00",
 
   about: {
     tr: "Hackathon’26, fikirlerini gerçeğe dönüştürmek isteyen gençler için bir üretim maratonu. Burada ne bildiğin değil, *kısa* *sürede* *ne* *üretebildiğin* önemli. Takımını topla, *sınırlarını* *zorla* ve ortaya koyduğun işi *jürinin* *karşısına* çıkar.",

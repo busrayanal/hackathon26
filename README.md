@@ -79,7 +79,7 @@ Sitedeki değişken bilgilerin hepsi `js/data.js` dosyasında. Her metnin `tr` v
 | Alan | Ne işe yarar |
 |---|---|
 | `formUrl` | Başvuru formunun linki. Boşsa buton "Başvurular Yakında Açılıyor" yazar. |
-| `applyDeadline` | Son başvuru anı (`"2026-11-30T23:59:00+03:00"`). Sayaç buna sayar, geçince buton "Başvurular Kapandı" olur. |
+| `applyDeadline` | Son başvuru anı (`"2026-12-07T23:59:00+03:00"`). Sayaç buna sayar, geçince buton "Başvurular Kapandı" olur. |
 | `eventStart` | Etkinliğin başlangıcı. |
 | `emails`, `phones`, `instagram` | İletişim bilgileri. Numaraya `name` eklenirse altında kime ait olduğu görünür. |
 | `jury` | Jüri üyeleri. Henüz açıklanmayan üye için `{}` bırakılır, gizli kart görünür. Fotoğraf `assets/jury/` içine konur. |
@@ -158,7 +158,7 @@ Everything that changes lives in `js/data.js`. Each text has a `tr` and an `en` 
 | Field | Purpose |
 |---|---|
 | `formUrl` | Link to the application form. When empty, the button reads "Applications Opening Soon". |
-| `applyDeadline` | Application deadline (`"2026-11-30T23:59:00+03:00"`). The countdown targets it; afterwards the button switches to "Applications Closed". |
+| `applyDeadline` | Application deadline (`"2026-12-07T23:59:00+03:00"`). The countdown targets it; afterwards the button switches to "Applications Closed". |
 | `eventStart` | Event start time. |
 | `emails`, `phones`, `instagram` | Contact details. Adding `name` to a phone number shows whose number it is. |
 | `jury` | Jury members. Leave `{}` for a member not yet announced to show a secret card. Photos go in `assets/jury/`. |
