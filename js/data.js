@@ -5,10 +5,11 @@ window.HACKATECH = {
   formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfhD2MSrQCk5y3_ICuEDqJbJkACjeuwLft-frZSd4_iX5sNQw/viewform",
 
   // İletişim. Boş bırakılanlar sitede görünmez.
-  emails: ["zehrakeskinn211@gmail.com", "efechdr12526@gmail.com"],
+  emails: ["zehrakeskinn211@gmail.com", "efechdr12526@gmail.com", "durgutahmet906@gmail.com"],
   phones: [
     { number: "0507 759 9402", name: "Zehra Keskin" },
-    { number: "0534 024 1711", name: "Muhammed Efe Çuhadar" }
+    { number: "0534 024 1711", name: "Muhammed Efe Çuhadar" },
+    { number: "0506 162 3989", name: "Ahmet Durgut" }
   ],
   // Sponsorluk penceresinde gösterilecek e-posta ve telefon(lar)
   sponsorEmails: ["sedanurcihangir@gmail.com"],
