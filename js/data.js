@@ -9,7 +9,7 @@ window.HACKATECH = {
   phones: [
     { number: "0507 759 9402", name: "Zehra Keskin" },
     { number: "0534 024 1711", name: "Muhammed Efe Çuhadar" },
-    { number: "0506 162 3989", name: "Ahmet Durgut" }
+    { number: "0506 162 3989", name: "Ahmet Durğut" }
   ],
   // Sponsorluk penceresinde gösterilecek e-posta ve telefon(lar)
   sponsorEmails: ["sedanurcihangir@gmail.com"],
