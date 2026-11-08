@@ -623,7 +623,7 @@ html:not(.gsap) .marquee-inner { animation: marquee 40s linear infinite; }
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -661,6 +661,7 @@ html:not(.gsap) .marquee-inner { animation: marquee 40s linear infinite; }
 
 @media (max-width: 760px) {
   .stats { grid-template-columns: repeat(2, 1fr); }
+  .stat:last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
 
 /* ---------- Cards ---------- */
