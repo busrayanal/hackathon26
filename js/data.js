@@ -5,7 +5,7 @@ window.HACKATECH = {
   formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfhD2MSrQCk5y3_ICuEDqJbJkACjeuwLft-frZSd4_iX5sNQw/viewform",
 
   // İletişim. Boş bırakılanlar sitede görünmez.
-  emails: ["gdscerzincan@gmail.com", "zehrakeskinn211@gmail.com", "efechdr12526@gmail.com"],
+  emails: ["zehrakeskinn211@gmail.com", "efechdr12526@gmail.com"],
   phones: [
     { number: "0507 759 9402", name: "Zehra Keskin" },
     { number: "0534 024 1711", name: "Muhammed Efe Çuhadar" }
