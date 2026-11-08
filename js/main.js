@@ -404,9 +404,10 @@
       label: { tr: "E-posta", en: "Email" }, icon: ICON.mail,
       rows: EMAILS.map((m) => ({ href: `mailto:${m}?subject=${encodeURIComponent("Hackathon’26 Sponsorluk")}`, text: m.replace("@", "<wbr>@"), copy: m }))
     });
-    if (phones.length) spGroups.push({
+    const spPhones = D.sponsorPhones ? D.sponsorPhones.map((p) => (typeof p === "string" ? { number: p } : p)) : phones;
+    if (spPhones.length) spGroups.push({
       label: { tr: "Telefon", en: "Phone" }, icon: ICON.phone,
-      rows: phones.map(phoneRow)
+      rows: spPhones.map(phoneRow)
     });
     $("#sponsorContacts").innerHTML = spGroups.map((g) => `
       <div class="sp-group">
