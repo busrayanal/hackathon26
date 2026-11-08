@@ -400,9 +400,10 @@
     } else contact.append(bi(make("span"), { tr: "İletişim bilgileri yakında paylaşılacak.", en: "Contact details coming soon." }));
 
     const spGroups = [];
-    if (EMAILS.length) spGroups.push({
+    const spEmails = D.sponsorEmails ? [].concat(D.sponsorEmails).filter(Boolean) : EMAILS;
+    if (spEmails.length) spGroups.push({
       label: { tr: "E-posta", en: "Email" }, icon: ICON.mail,
-      rows: EMAILS.map((m) => ({ href: `mailto:${m}?subject=${encodeURIComponent("Hackathon’26 Sponsorluk")}`, text: m.replace("@", "<wbr>@"), copy: m }))
+      rows: spEmails.map((m) => ({ href: `mailto:${m}?subject=${encodeURIComponent("Hackathon’26 Sponsorluk")}`, text: m.replace("@", "<wbr>@"), copy: m }))
     });
     const spPhones = D.sponsorPhones ? D.sponsorPhones.map((p) => (typeof p === "string" ? { number: p } : p)) : phones;
     if (spPhones.length) spGroups.push({
