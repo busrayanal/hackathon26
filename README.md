@@ -22,7 +22,7 @@
 
 ## Türkçe
 
-**Hackathon’26**, Google Developer Groups on Campus Erzincan Binali Yıldırım Üniversitesi'nin düzenlediği yapay zeka hackathonunun tanıtım sitesi. Etkinlik 14–15 Aralık 2026'da Erzincan'da; ilk gün Milli Teknoloji Atölyesi'nde 10 saatlik geliştirme, ikinci gün Erdoğan Büyükkasap Kongre Merkezi'nde sunumlar ve ödül töreni.
+**Hackathon’26**, Google Developer Groups on Campus Erzincan Binali Yıldırım Üniversitesi'nin düzenlediği yapay zeka hackathonunun tanıtım sitesi. Etkinlik 14–15 Aralık 2026'da Erzincan'da; ilk gün Milli Teknoloji Atölyesi'nde 12 saatlik geliştirme (10.00–22.00), ikinci gün Erdoğan Büyükkasap Kongre Merkezi'nde sunumlar ve ödül töreni.
 
 🔗 **Canlı site:** [busrayanal.github.io/hackathon26](https://busrayanal.github.io/hackathon26/)
 

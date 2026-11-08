@@ -5,8 +5,9 @@ window.HACKATECH = {
   formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfhD2MSrQCk5y3_ICuEDqJbJkACjeuwLft-frZSd4_iX5sNQw/viewform",
 
   // İletişim. Boş bırakılanlar sitede görünmez.
-  emails: ["zehrakeskinn211@gmail.com", "efechdr12526@gmail.com"],
+  emails: ["gdscerzincan@gmail.com", "zehrakeskinn211@gmail.com", "efechdr12526@gmail.com"],
   phones: [
+    { number: "0505 469 0611", name: "Sedanur Cihangir" },
     { number: "0507 759 9402", name: "Zehra Keskin" },
     { number: "0534 024 1711", name: "Muhammed Efe Çuhadar" }
   ],
@@ -28,13 +29,13 @@ window.HACKATECH = {
   schedule: [
     {
       label: { tr: "1. Gün", en: "Day 1" },
-      badge: { tr: "10 saatlik geliştirme", en: "10 hours of building" },
+      badge: { tr: "12 saatlik geliştirme", en: "12 hours of building" },
       title: { tr: "Hackathon Günü", en: "Hack Day" },
       date: { tr: "14 Aralık 2026 · Pazartesi", en: "December 14, 2026 · Monday" },
       venue: "Milli Teknoloji Atölyesi",
       items: [
         { visual: "unlock", title: { tr: "Açılış", en: "Opening" }, desc: { tr: "Gizli tema açıklanır.", en: "The secret theme is revealed." } },
-        { visual: "code", title: { tr: "Proje geliştirme", en: "Building" }, desc: { tr: "Takımlar projelerini hayata geçirir.", en: "Teams bring their projects to life." } }
+        { visual: "code", time: "10.00–22.00", title: { tr: "Proje geliştirme", en: "Building" }, desc: { tr: "Takımlar projelerini hayata geçirir.", en: "Teams bring their projects to life." } }
       ]
     },
     {
@@ -118,8 +119,8 @@ window.HACKATECH = {
       a: { tr: "Hayır, Hackathon’26’ya katılım tamamen ücretsizdir.", en: "No, joining Hackathon’26 is completely free." }
     },
     {
-      q: { tr: "Sadece hazır bir yapay zeka API'si kullanmak yeterli mi?", en: "Is using a ready-made AI API enough?" },
-      a: { tr: "Hayır. Projende takımının eğittiği ya da ince ayar yaptığı bir model olmalı. Hazır API'leri bu modelin yanında ek araç olarak kullanabilirsin.", en: "No. Your project needs a model trained or fine-tuned by your team. Ready-made APIs can be used alongside it as additional tools." }
+      q: { tr: "Hazır API ve yapay zeka araçları kullanabilir miyim?", en: "Can I use ready-made APIs and AI tools?" },
+      a: { tr: "Evet. Açık kaynak kodlar, kütüphaneler, hazır API'ler ve yapay zeka araçları serbest. Ama takımın projenin çalışma mantığına hâkim olmalı ve kullandığı her şeyi teslim dokümanında belirtmeli.", en: "Yes. Open-source code, libraries, ready-made APIs and AI tools are all allowed. Your team must understand how the project works and list everything it used in the submission document." }
     },
     {
       q: { tr: "Hazır veri seti kullanabilir miyim?", en: "Can I use existing datasets?" },
@@ -130,8 +131,12 @@ window.HACKATECH = {
       a: { tr: "Dizüstü bilgisayarın ve şarj aletin yeterli. Yiyecek ve içecek bizden.", en: "Just your laptop and charger. Food and drinks are on us." }
     },
     {
+      q: { tr: "Konaklama sağlanıyor mu?", en: "Is accommodation provided?" },
+      a: { tr: "Şehir dışından gelenlere konaklama sağlanmıyor, ama KYK yurtları ve misafirhaneler için yönlendirme desteği veriyoruz.", en: "Accommodation is not provided for out-of-town participants, but we help with directions to KYK dormitories and guesthouses." }
+    },
+    {
       q: { tr: "Projeler nasıl değerlendirilecek?", en: "How are projects judged?" },
-      a: { tr: "Projeler 15 Aralık'taki sunumların ardından jüri tarafından değerlendirilir. Değerlendirme kriterleri yakında açıklanacak.", en: "The jury evaluates projects after the presentations on December 15. Judging criteria will be announced soon." }
+      a: { tr: "Projeler 15 Aralık'taki sunumların ardından jüri tarafından değerlendirilir; tüm takımlar aynı kriterlerle puanlanır. Sunum ve teslim kuralları Kılavuz bölümünde.", en: "The jury evaluates projects after the presentations on December 15; all teams are scored on the same criteria. Presentation and submission rules are in the Guide section." }
     }
   ]
 };

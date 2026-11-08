@@ -2651,3 +2651,15 @@ html:not(.gsap) .marquee-inner { animation: marquee 40s linear infinite; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* ---------- Guide ---------- */
+
+.guide-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 40px;
+}
+@media (max-width: 480px) {
+  .guide-actions .btn { width: 100%; justify-content: center; }
+}
