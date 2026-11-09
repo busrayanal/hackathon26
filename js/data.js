@@ -134,8 +134,8 @@ window.HACKATECH = {
       a: { tr: "Dizüstü bilgisayarın ve şarj aletin yeterli. Yiyecek ve içecek bizden.", en: "Just your laptop and charger. Food and drinks are on us." }
     },
     {
-      q: { tr: "Konaklama sağlanıyor mu?", en: "Is accommodation provided?" },
-      a: { tr: "Şehir dışından gelenlere konaklama sağlanmıyor, ama KYK yurtları ve misafirhaneler için yönlendirme desteği veriyoruz.", en: "Accommodation is not provided for out-of-town participants, but we help with directions to KYK dormitories and guesthouses." }
+      q: { tr: "Konaklama ve ulaşım sağlanıyor mu?", en: "Are accommodation and travel covered?" },
+      a: { tr: "Şehir dışından gelen katılımcıların konaklaması yurtlarda sağlanacak. Ulaşım masrafları ise katılımcılara aittir; yol ücretlerini karşılamıyoruz.", en: "Accommodation for out-of-town participants will be provided in dormitories. Travel costs are not covered and are the participants' own responsibility." }
     },
     {
       q: { tr: "Projeler nasıl değerlendirilecek?", en: "How are projects judged?" },
