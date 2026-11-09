@@ -135,7 +135,7 @@ window.HACKATECH = {
     },
     {
       q: { tr: "Konaklama ve ulaşım sağlanıyor mu?", en: "Are accommodation and travel covered?" },
-      a: { tr: "Şehir dışından gelen katılımcıların konaklaması yurtlarda sağlanacak. Ulaşım masrafları ise katılımcılara aittir; yol ücretlerini karşılamıyoruz.", en: "Accommodation for out-of-town participants will be provided in dormitories. Travel costs are not covered and are the participants' own responsibility." }
+      a: { tr: "Şehir dışından gelen katılımcılar için yurtlarda konaklama imkânı sağlanacaktır. Ulaşım giderleri katılımcılara aittir.", en: "Dormitory accommodation will be provided for out-of-town participants. Travel costs are covered by the participants." }
     },
     {
       q: { tr: "Projeler nasıl değerlendirilecek?", en: "How are projects judged?" },
